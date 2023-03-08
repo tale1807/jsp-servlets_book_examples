@@ -1,0 +1,44 @@
+
+<web-app>
+  <filter>
+    <filter-name>Logging Filter</filter-name>
+    <filter-class>LoggingFilter</filter-class>
+</filter>
+<filter-mapping>
+    <filter-name>Logging Filter</filter-name>
+    <servlet-name>FilteredServlet</servlet-name>
+</filter-mapping>
+<servlet>
+    <servlet-name>HelloServlet</servlet-name>
+    <servlet-class>HelloServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/HelloServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>FilteredServlet</servlet-name>
+    <servlet-class>FilteredServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>FilteredServlet</servlet-name>
+    <url-pattern>/Filtered</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>SessionLoginServlet</servlet-name>
+    <servlet-class>SessionLoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SessionLoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>Content2Servlet</servlet-name>
+    <servlet-class>Content2Servlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Content2Servlet</servlet-name>
+    <url-pattern>/Content2Servlet</url-pattern>
+</servlet-mapping>
+
+</web-app>
